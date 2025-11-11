@@ -1,0 +1,39 @@
+*{
+    text-align: justify;
+}
+body
+{
+    background-color: #AA7639;
+    color: #FFD8AA;
+}
+.navigationBar {
+  text-align: center;
+  background-color: #804F15;
+}
+.navigationBar ul{
+    list-style: none;
+}
+.navigationBar li
+{
+    display: inline;
+}
+
+/* .Fromdiv
+{
+    border: 2px solid #804F15;
+   
+} */
+.Fromdiv {
+  border: 2px solid #804F15;
+  padding: 20px;
+  width: 50%;
+  margin: 40px auto;
+  background-color: #FFD8AA;
+  color: #804F15;
+  border-radius: 10px;
+}
+.formButton
+{
+    padding-left: 35%;
+   
+}
