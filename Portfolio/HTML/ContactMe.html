@@ -3,49 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
     <link rel="stylesheet" href="../CSS/ContactMe.css">
+    <title>Contact Me</title>
 </head>
-<body> 
-  <div class="navigationBar">
+<body>
+
+    <div class="navigationBar">
         <ul>
             <li><a href="HTML/Education.html">Education</a></li>
             <li><a href="HTML/Experience.html">Experience</a></li>
             <li><a href="HTML/project.html">Project</a></li>
             <li><a href="HTML/ContactMe.html">Contact Me</a></li>
-
-
         </ul>
     </div>
+
     <div class="Fromdiv">
-   <form method="GET">
-    First Name : <input type="text" name="name" required> <br>
-    Last Name : <input type="text" name="name" required> <br>
-    Email: <input type="email"  required> <br>
-    Company : <input type="text" > <br>
-    Resone For Contact  <br>
-    <input type="radio" name ="ContactResone" required > Project <br>
-    <input type="radio" name ="ContactResone" > Thesis <br>
-    <input type="radio" name ="ContactResone" > Job <br>
+        <form method="GET">
 
-    Services I provide and please chose the services you need :<br>
-   
-    <input type="checkbox" name ="services"required> Full stack Development with Asp.net core (MVC & API )<br>
-     <input type="checkbox" name ="services"required> Full stack Development with html,css , js , php<br>
-      <input type="checkbox" name ="services"required> web Form Applications with C#<br>
-    <input type="checkbox" name ="services" required> Database Management <br> 
-       
-      Book an Appointment: <br>
-      <input type="date" required> <br>
-      <div class="formButton">
-      <input type="submit" value ="Register">
-      <input type="reset" value ="Reset">
-      </div>
+            <div class="form-row">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
 
+            <div class="form-row">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
 
-   </form>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-row">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+            </div>
+              <label>Reason For Contact</label>
+            <div class="form-row">
+                <!-- <label>Reason For Contact</label> -->
+                <div class="RadioButton">
+                    <input type="radio" name="ContactReason" value="Project" required> Project<br>
+                    <input type="radio" name="ContactReason" value="Thesis"> Thesis<br>
+                    <input type="radio" name="ContactReason" value="Job"> Job<br>
+                </div>
+            </div>
+            <label>Services You Need</label>
+            <div class="form-row">
+                <!-- <label>Services You Need</label> -->
+                <div>
+                    <input type="checkbox" name="services" value="asp"> Full stack Development (ASP.NET Core)<br>
+                    <input type="checkbox" name="services" value="php"> Full stack Development (HTML, CSS, JS, PHP)<br>
+                    <input type="checkbox" name="services" value="webform"> Web Form Applications with C#<br>
+                    <input type="checkbox" name="services" value="db"> Database Management<br>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="date">Book Appointment</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="formButton">
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
     </div>
 
-    
 </body>
 </html>

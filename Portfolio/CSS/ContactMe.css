@@ -5,10 +5,16 @@ body
 {
     background-color: #AA7639;
     color: #FFD8AA;
+    margin: 0%;
 }
 .navigationBar {
+    /* padding-left: 300px; */
+
+    padding-left: 75%; 
   text-align: center;
   background-color: #804F15;
+  display: flex;
+  /* justify-content: center; */
 }
 .navigationBar ul{
     list-style: none;
@@ -26,14 +32,33 @@ body
 .Fromdiv {
   border: 2px solid #804F15;
   padding: 20px;
-  width: 50%;
+  width: 30%;
   margin: 40px auto;
   background-color: #FFD8AA;
   color: #804F15;
   border-radius: 10px;
 }
+/* .RadioButton
+{
+    margin-left: 50%;
+} */
 .formButton
 {
     padding-left: 35%;
    
+}
+.form-row
+{
+    display: flex;
+    align-items: center;
+     margin-bottom: 12px;
+}
+.form-row label
+{
+    display: flex;
+    width: 180px;
+}
+.RadioButton
+{
+    padding-left: 40%;
 }
