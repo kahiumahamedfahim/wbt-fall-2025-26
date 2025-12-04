@@ -13,7 +13,7 @@ body
     padding-left: 75%; 
   text-align: center;
   background-color: #804F15;
-  display: flex;
+  display: inline-block;
   /* justify-content: center; */
 }
 .navigationBar ul{
@@ -21,7 +21,7 @@ body
 }
 .navigationBar li
 {
-    display: inline;
+    display: inline-block;
 }
 
 /* .Fromdiv
